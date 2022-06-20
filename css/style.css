@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* INDEX */
+
+/* BODY INDEX */
+
+.body{
+    background-image: linear-gradient(#EDE3E4, grey, rgb(68, 67, 67));
+}
+
+/* NAV INDEX */
+
+nav{
+    background-color:#9B6A6C; 
+}
+
+nav .nav-link{
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav .navbar-brand{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #e8ab12;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav span img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+/* MAIN INDEX */
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;   
+}
+
+.card img{
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+}
+
+/* FOOTER INDEX */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
