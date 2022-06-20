@@ -478,3 +478,25 @@ footer img{
     justify-content: center;
     align-items: flex-start;
 }
+
+
+/* HTML ACERCA DE GUNS */
+
+/* MAIN */
+
+main div p{
+    font-size: 20px;
+}
+
+main div ol{
+    font-size: 20px;
+}
+.mainGuns a:hover{
+    transition: 3s !important;
+    color: black !important;
+    background-color: white !important;
+}
+
+div small img{
+    max-width: 300px;
+}
