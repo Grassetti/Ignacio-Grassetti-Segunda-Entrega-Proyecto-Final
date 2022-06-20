@@ -500,3 +500,120 @@ main div ol{
 div small img{
     max-width: 300px;
 }
+
+
+/* HTML CONTACTO */
+
+
+/* GRID CONTACTO */
+
+.gridContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr .15fr .15fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav5 nav5 nav5 nav5"
+        "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
+        "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
+        "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
+        "footer footer footer footer";
+    background-image: linear-gradient(#EDE3E4, grey, rgb(68, 67, 67));
+}
+
+
+
+/* NAV CONTACTO */
+
+.nav5 {
+    grid-area: nav5;
+    display: flex;
+    flex-direction: row;
+    background-color: #9B6A6C;
+}
+
+.nav5 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 3px black;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.nav5 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 400px;
+    padding-left: 300px;
+}
+
+.nav5 li {
+    margin: 20px;
+    list-style: none;
+}
+
+.nav5 ul li {
+    padding: 0 20px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.nav5 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* SECCION 1 CONTACTO */
+
+.sectionContacto1 {
+    grid-area: sectionContacto1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionContacto1 img {
+    width: 600px;
+}
+
+
+/* SECCION 2 CONTACTO */
+
+.sectionContacto2 {
+    grid-area: SectionContacto2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sectionContacto2 form {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    border-radius: 20px;
+    background-color: rgb(40, 37, 37);
+    color: white;
+}
+
+.sectionContacto2 form input {
+    margin: 1rem;
+}
+
+
+.sectionContacto2 form textarea {
+    width: 200px;
+    height: 50px;
+    margin: 1rem;
+}
+
+
+/* FOOTER CONTACTO */
+
+.footer {
+    grid-area: footer;
+}
