@@ -74,3 +74,117 @@ footer img{
     width: 50px;
     height: 50px;
 }
+
+
+/* HTML GIRAS */
+
+
+/* GRID GIRAS */
+
+.gridGiras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr .2fr .5fr 1fr .15fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav3 nav3 nav3 nav3"
+        "table table table table"
+        "table table table table"
+        "sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1"
+        "footer footer footer footer";
+    background-image: linear-gradient(#EDE3E4, grey, rgb(68, 67, 67));
+}
+
+
+
+/* NAV GIRAS */
+
+.nav3 {
+    grid-area: nav3;
+    display: flex;
+    flex-direction: row;
+    background-color: #9B6A6C;
+}
+
+.nav3 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 3px black;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.nav3 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 400px;
+    padding-left: 300px;
+}
+
+.nav3 li {
+    margin: 20px;
+    list-style: none;
+}
+
+.nav3 ul li {
+    padding: 0 20px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* TABLE GIRAS */
+
+.table {
+    grid-area: table;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.table table {
+    border: black 3px solid;
+    padding: 50px;
+    background-color: burlywood;
+    margin-top: 100px;
+}
+
+.table table th {
+    border: black 3px solid;
+    padding: 20px;
+}
+
+.table table td {
+    border: black 3px solid;
+    padding: 20px;
+}
+
+/* SECCION 1 GIRAS */
+
+.sectionGiras1 {
+    grid-area: sectionGiras1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionGiras1 img {
+    height: 700px;
+    margin: 100px 0;
+}
+
+/* FOOTER GIRAS */
+
+.footer {
+    grid-area: footer;
+}
