@@ -17,6 +17,10 @@ nav{
     background-color:#9B6A6C; 
 }
 
+nav:hover {
+    background-color: rgb(214, 173, 6) !important;
+}
+
 nav .nav-link{
     color: black;
     font-size: 1.5rem;
@@ -39,6 +43,16 @@ nav span img{
     padding: 10px;
 }
 
+nav span img:hover {
+    transition: 5s;
+    width: 200px;
+    height: 200px;
+}
+
+nav div a:hover {
+    transition: 3s;
+    transform: rotate(30deg);
+}
 
 /* MAIN INDEX */
 
@@ -55,6 +69,13 @@ h1{
 .card{
     display: flex;
     align-items: center;
+}
+
+.card:hover{
+    transition: 3s;
+    transform: scale(1.03, 1.03);
+    background-color: black !important;
+    color: white;
 }
 
 /* FOOTER INDEX */
@@ -75,6 +96,10 @@ footer img{
     height: 50px;
 }
 
+footer a:hover {
+    transition: 3s;
+    transform: scale(2, 1.5);
+}
 
 /* HTML GIRAS */
 
@@ -107,12 +132,22 @@ footer img{
     background-color: #9B6A6C;
 }
 
+.nav3:hover {
+    background-color: rgb(214, 173, 6);
+}
+
 .nav3 img {
     height: 100px;
     width: 100px;
     border-radius: 3px black;
     margin-top: 10px;
     align-items: center;
+}
+
+.nav3 img:hover {
+    transition: 5s;
+    width: 200px;
+    height: 200px;
 }
 
 .nav3 ul {
@@ -140,6 +175,11 @@ footer img{
     color: black;
 }
 
+.nav3 ul li:hover {
+    transition: 3s;
+    transform: rotate(30deg);
+}
+
 
 /* TABLE GIRAS */
 
@@ -158,14 +198,26 @@ footer img{
     margin-top: 100px;
 }
 
+.table table:hover{
+    background-color: grey;
+}
+
 .table table th {
     border: black 3px solid;
     padding: 20px;
 }
 
+.table table th:hover{
+    background-color: red;
+}
+
 .table table td {
     border: black 3px solid;
     padding: 20px;
+}
+
+.table table td:hover{
+    background-color: red;
 }
 
 /* SECCION 1 GIRAS */
@@ -181,6 +233,11 @@ footer img{
 .sectionGiras1 img {
     height: 700px;
     margin: 100px 0;
+}
+
+.sectionGiras1 img:hover{
+    transition: 3s;
+    transform: scale(2, 1.2);
 }
 
 /* FOOTER GIRAS */
@@ -227,12 +284,22 @@ footer img{
     justify-content: space-between;
 }
 
+.nav2:hover {
+    background-color: rgb(214, 173, 6);
+}
+
 .nav2 img {
     height: 100px;
     width: 100px;
     border-radius: 3px black;
     margin-top: 10px;
     align-items: center;
+}
+
+.nav2 img:hover {
+    transition: 5s;
+    width: 200px;
+    height: 200px;
 }
 
 .nav2 ul {
@@ -257,6 +324,11 @@ footer img{
 .nav2 ul li a {
     text-decoration: none;
     color: black;
+}
+
+.nav2 ul li:hover {
+    transition: 3s;
+    transform: rotate(30deg);
 }
 
 
@@ -303,6 +375,7 @@ footer img{
     grid-area: sectionPlaylist1;
     display: flex;
     flex-direction: column;
+    animation-name: animate__heartBeat;
 }
 
 .sectionPlaylist1 h2 {
@@ -325,10 +398,16 @@ footer img{
 .div2 {
     display: flex;
     flex-direction: row-reverse;
+    animation-name: animate__shakeX;
 }
 
 .sectionPlaylist1 form {
     font-size: 2rem;
+}
+
+.sectionPlaylist1 form input:hover {
+    transition: 3s;
+    transform: scale(3, 3);
 }
 
 
@@ -338,6 +417,7 @@ footer img{
     grid-area: sectionPlaylist2;
     display: flex;
     flex-direction: column;
+    animation-name: animate__heartBeat;
 }
 
 .sectionPlaylist2 h2 {
@@ -359,6 +439,7 @@ footer img{
 
 .div {
     margin-right: 10px;
+    animation-name: animate__shakeX;
 }
 
 .sectionPlaylist2 div img {
@@ -371,6 +452,10 @@ footer img{
     font-size: 2rem;
 }
 
+.sectionPlaylist2 form input:hover {
+    transition: 3s;
+    transform: scale(3, 3);
+}
 
 /* SECCION 3 MAIN PLAYLIST */
 
@@ -378,6 +463,7 @@ footer img{
     grid-area: sectionPlaylist3;
     display: flex;
     flex-direction: column;
+    animation-name: animate__heartBeat;
 }
 
 .sectionPlaylist3 h2 {
@@ -402,11 +488,17 @@ footer img{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 50px;
+    animation-name: animate__shakeX;
 }
 
 .sectionPlaylist3 form {
     font-size: 2rem;
     margin-bottom: 30px;
+}
+
+.sectionPlaylist3 form input:hover {
+    transition: 3s;
+    transform: scale(3, 3);
 }
 
 
@@ -416,6 +508,7 @@ footer img{
     grid-area: sectionPlaylist4;
     display: flex;
     flex-direction: column;
+    animation-name: animate__heartBeat;
 }
 
 .sectionPlaylist4 h2 {
@@ -438,6 +531,7 @@ footer img{
 
 .div2 {
     margin-right: 10px;
+    animation-name: animate__shakeX;
 }
 
 .sectionPlaylist4 div img {
@@ -453,6 +547,10 @@ footer img{
     margin-bottom: 30px;
 }
 
+.sectionPlaylist4 form input:hover {
+    transition: 3s;
+    transform: scale(3, 3);
+}
 
 /* FOOTER PLAYLIST */
 
@@ -471,6 +569,10 @@ footer img{
     margin-top: 30px;
 }
 
+.footer a:hover {
+    transition: 3s;
+    transform: scale(2, 2);
+}
 
 .footer1{
     display: flex;
@@ -533,12 +635,22 @@ div small img{
     background-color: #9B6A6C;
 }
 
+.nav5:hover {
+    background-color: rgb(214, 173, 6);
+}
+
 .nav5 img {
     height: 100px;
     width: 100px;
     border-radius: 3px black;
     margin-top: 10px;
     align-items: center;
+}
+
+.nav5 img:hover {
+    transition: 5s;
+    width: 200px;
+    height: 200px;
 }
 
 .nav5 ul {
@@ -564,6 +676,11 @@ div small img{
 .nav5 ul li a {
     text-decoration: none;
     color: black;
+}
+
+.nav5 ul li:hover {
+    transition: 3s;
+    transform: rotate(30deg);
 }
 
 
@@ -600,15 +717,34 @@ div small img{
     color: white;
 }
 
+.sectionContacto2 form:hover {
+    transition: 3s;
+    color: rgb(40, 37, 37);
+    background-color: white;
+}
+
 .sectionContacto2 form input {
     margin: 1rem;
 }
 
+.sectionContacto2 form input:hover {
+    transition: 3s;
+    transform: scale(1.5, 1.5);
+    background-color: black;
+    color: white;
+}
 
 .sectionContacto2 form textarea {
     width: 200px;
     height: 50px;
     margin: 1rem;
+}
+
+.sectionContacto2 form textarea:hover {
+    transition: 3s;
+    transform: scale(1.5, 1.5);
+    background-color: black;
+    color: white;
 }
 
 
